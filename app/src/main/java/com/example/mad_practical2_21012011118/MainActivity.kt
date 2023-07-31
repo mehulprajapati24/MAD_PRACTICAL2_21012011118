@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -47,6 +48,10 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, "$msg")
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
         //All function are executed together so in Snackbar last snackbar will be show
-        Snackbar.make(findViewById(R.id.constraintLayout), "$msg", Snackbar.LENGTH_SHORT).show()
+        val view = findViewById<ConstraintLayout?>(R.id.maintLayout)
+        if(view!=null)
+        {
+            Snackbar.make(view, "$msg", Snackbar.LENGTH_SHORT).show()
+        }
     }
 }
