@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showMessage(msg:String){
+        //In Logcat to see the log message write: package:mine tag:MainActivity
         Log.i(TAG, "$msg")
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
         //All function are executed together so in Snackbar last snackbar will be show
