@@ -21,27 +21,27 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        showMessage("OnResume() method is called")
+        showMessage("onResume() method is called")
     }
 
     override fun onPause() {
         super.onPause()
-        showMessage("OnPause() method is called")
+        showMessage("onPause() method is called")
     }
 
     override fun onStop() {
         super.onStop()
-        showMessage("OnStop() method is called")
+        showMessage("onStop() method is called")
     }
 
     override fun onRestart() {
         super.onRestart()
-        showMessage("OnRestart() method is called")
+        showMessage("onRestart() method is called")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        showMessage("OnDestroy() method is called")
+        showMessage("onDestroy() method is called")
     }
 
     fun showMessage(msg:String){
